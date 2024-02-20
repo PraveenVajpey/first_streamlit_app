@@ -45,3 +45,5 @@ my_data_row=my_cur.fetchall()
 streamlit.header("The Fruit List Contains")
 streamlit.dataframe(my_data_row)
 
+streamlit.dataframe("What Fruit Would You Like to add")
+
