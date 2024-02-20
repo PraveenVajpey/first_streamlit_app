@@ -40,3 +40,8 @@ my_data_row = my_cur.fetchone()
 streamlit.text("Hello from Snowflake:")
 streamlit.text(my_data_row)
 
+my_cur.execute("select * from pc_rivery_db.public.fruit_load_list")
+my_data_row=my_cur.fetchall()
+streamlit.header("The Fruit List Contains")
+streamlit.dataframe(my_data_row)
+
